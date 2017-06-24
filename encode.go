@@ -671,7 +671,6 @@ func (se *structEncoder) encode(e *encodeState, v reflect.Value, opts encOpts) {
 
 	filter := opts.filter
 	for i, f := range se.fields {
-		fmt.Printf("filter fields:%v filter:%v valid:%v \n", f.filters, filter, f.fieldValid(opts.filter))
 		fv := fieldByIndex(v, f.index)
 		if !f.fieldValid(filter) || !fv.IsValid() || f.omitEmpty && isEmptyValue(fv) {
 			continue
