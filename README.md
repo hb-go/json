@@ -69,7 +69,7 @@ json.MarshalFilterIndent(i, "a1", "", "\t")
 
 #### [echo-web Demo](https://github.com/hb-go/echo-web/blob/master/router/api/json.go)
 ```
-http://{API_HOST}/json/encode?filter=*
+http://{API_HOST}/json/encode
 http://{API_HOST}/json/encode?filter=*
 http://{API_HOST}/json/encode?filter=a1
 http://{API_HOST}/json/encode?filter=a2
