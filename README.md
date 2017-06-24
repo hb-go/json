@@ -62,9 +62,9 @@ json.MarshalFilterIndent(i, "*", "", "\t")
 json.MarshalFilterIndent(i, "a1", "", "\t")
 ```
 
-#### ["a1"，过滤，只要a1](#a2json)
+#### ["a2"，过滤，只要a1](#a2json)
 ```go
-json.MarshalFilterIndent(i, "a1", "", "\t")
+json.MarshalFilterIndent(i, "a2", "", "\t")
 ```
 
 #### [echo-web Demo](https://github.com/hb-go/echo-web/blob/master/router/api/json.go)
