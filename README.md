@@ -1,5 +1,10 @@
 ## JSON encode扩展
-基于`json`标签扩展encode规则，实现struct动态编码为不同JSON结构(字段的取舍)
+基于`json`标签扩展encode规则，实现struct动态编码为不同JSON结构`字段的取舍`
+
+- golang struct转json提供了字段名、字段筛选`-`、空值忽略`omitempty`等标签，使用中对于选择性忽略部分字段的支持较弱
+- 可以定义新struct或者用map，实现自己想要的不同json结构
+- 在这里尝试扩展json tag规则的方式来支持同一struct解析为不同的json结构
+- 目前仅做了`动态的字段取舍`的规则，在此基础上可以进一步扩展，如多种字段名定义等
 
 ### `json`标签格式
 ```go
