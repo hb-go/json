@@ -51,25 +51,27 @@ type C struct {
 ```go
 json.MarshalFilterIndent(i, "", "", "\t")
 ```
-[echo-web Demo](https://github.com/hb-go/echo-web/blob/master/router/api/json.go){API_HOST}/json/encode
 
 #### ["*"，过滤，A全部](#json-1)
 ```go
 json.MarshalFilterIndent(i, "*", "", "\t")
 ```
-[echo-web Demo](https://github.com/hb-go/echo-web/blob/master/router/api/json.go){API_HOST}/json/encode?filter=*
 
 #### ["a1"，过滤，只要a1](#a1json)
 ```go
 json.MarshalFilterIndent(i, "a1", "", "\t")
 ```
-[echo-web Demo](https://github.com/hb-go/echo-web/blob/master/router/api/json.go){API_HOST}/json/encode?filter=a1
 
 #### ["a1"，过滤，只要a1](#a2json)
 ```go
 json.MarshalFilterIndent(i, "a1", "", "\t")
 ```
-[echo-web Demo](https://github.com/hb-go/echo-web/blob/master/router/api/json.go){API_HOST}/json/encode?filter=a2
+
+#### [echo-web Demo](https://github.com/hb-go/echo-web/blob/master/router/api/json.go)
+http://{API_HOST}/json/encode?filter=*
+http://{API_HOST}/json/encode?filter=*
+http://{API_HOST}/json/encode?filter=a1
+http://{API_HOST}/json/encode?filter=a2
 
 ##### ""json
 ```json
